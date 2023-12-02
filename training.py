@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     # Prepare the transformers training arguments
     args = TrainingArguments(
-        output_dir=f"models/sys_{args.model_type}",
+        output_dir=f"models/output/sys_{args.model_type}",
         # Training Hyperparameters:
         learning_rate=5e-5,
         per_device_train_batch_size=16,
