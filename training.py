@@ -68,6 +68,8 @@ if __name__ == "__main__":
 
     test_dataset = load_dataset(DATASET, split="test")
     test_dataset = test_dataset.filter(lambda x: x["lang"] == "en")
+    if args.model_type == 'b':
+        test_dataset = test_dataset.map(filter_subclasses)
     # Compute & save the metrics on the test set
     metrics = trainer.evaluate(test_dataset, metric_key_prefix="test")
     trainer.save_metrics("test", metrics)
