@@ -24,7 +24,7 @@ if __name__ == "__main__":
         eval_dataset = eval_dataset.map(filter_subclasses)
 
     # Initialize a SpanMarker model using a pretrained BERT-style encoder
-    model_name = "bert-base-multilingual-cased"
+    model_name = "bert-large-cased"
     model = SpanMarkerModel.from_pretrained(
         model_name,
         labels=LABELS_SYS_A if args.model_type == "a" else LABELS_SYS_B,
