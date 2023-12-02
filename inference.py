@@ -31,5 +31,5 @@ if __name__ == "__main__":
 
     # Load the model from local
     model_a = SpanMarkerModel.from_pretrained(f"models/sys_{args.model_type}/checkpoint-final")
-    metrics = _inf(model_a, test_dataset if args.model_type == 'b' else test_dataset.map(filter_subclasses))
+    metrics = _inf(model_a, test_dataset if args.model_type == 'a' else test_dataset.map(filter_subclasses))
     print(metrics)
