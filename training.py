@@ -63,7 +63,7 @@ if __name__ == "__main__":
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
     )
-    trainer.train()
+    trainer.train(resume_from_checkpoint = True)
     trainer.save_model(f"models/sys_{args.model_type}/checkpoint-final")
 
     test_dataset = load_dataset(DATASET, split="test")
