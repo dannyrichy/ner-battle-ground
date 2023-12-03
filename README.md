@@ -1,5 +1,5 @@
 # ner-battle-ground
-The necessary libraries needed for running the experiment can be found in req.txt file. The report can be found [here](https://github.com/dannyrichy/ner-battle-ground/blob/master/RISE_ner_assgn.pdf)
+The necessary libraries needed for running the experiment can be found in [req.txt](https://github.com/dannyrichy/ner-battle-ground/blob/master/req.txt) file. The report can be found [here](https://github.com/dannyrichy/ner-battle-ground/blob/master/RISE_ner_assgn.pdf)
 
 # Steps to run the code
 ## Training
